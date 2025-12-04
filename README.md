@@ -141,23 +141,14 @@ Flowchart Program
 ```
 
 Penjelasan Flowchart Singkat
-
-Program masuk ke demo().
-
+Program masuk ke ```demo()```.
 Membuat objek Mahasiswa, yang otomatis memanggil konstruktor Person.
-
 Mengisi atribut:
-
-umur (pakai setter → validasi umur)
-
+umur ```(pakai setter → validasi umur)```
 alamat
-
 Memanggil:
-
-cetak_nama()
-
-cetak_data() (override dari Person)
-
+```cetak_nama()```
+```cetak_data()``` (override dari Person)
 Program selesai.
 
 
