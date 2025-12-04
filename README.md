@@ -151,10 +151,3 @@ Memanggil:
 ```cetak_nama()```
 ```cetak_data()``` (override dari Person)
 Program selesai.
-
-
-**Penjelasan singkat:**
-- Blok "Define Class" hanya mendefinisikan struktur kelas (tidak dieksekusi sebagai aksi runtime sampai dipakai).
-- Kondisi `if __name__ == '__main__'` menjalankan fungsi `demo()` saat file dijalankan langsung.
-- `demo()` membuat instance Mahasiswa, menetapkan atribut, lalu memanggil method untuk menampilkan data.
-
