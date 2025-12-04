@@ -88,36 +88,77 @@ Menyimpan data ke file atau database.
 Menambah atribut lain seperti jurusan, IPK, dll.
 Membuat list untuk menyimpan banyak mahasiswa.
 Method untuk mencari mahasiswa berdasarkan NIM.
+
+
 Flowchart
-```
-START
-  |
-  |---> [Define Class Mahasiswa]
-  |           - attributes: nim, nama, umur, alamat
-  ```
-methods: init, cetak_nama, cetak_data
-```
----> if name == 'main'
 
-
-        +---> CALL demo()
-                  |
-                  +---> mhs1 = Mahasiswa('312510157', 'M.Ridwan Almahri')
-                  |
-                  +---> mhs1.umur = 19
-                  |
-                  +---> mhs1.alamat = "Bekasi"
-                  |
-                  +---> CALL mhs1.cetak_nama()
-                  
+Flowchart Program
+```
+                ┌──────────────────────────┐
+                │        Program Start     │
+                └──────────────┬───────────┘
+                               │
+                               ▼
+                ┌──────────────────────────┐
+                │        demo()            │
+                └──────────────┬───────────┘
+                               │
+                               ▼
+        ┌────────────────────────────────────────────┐
+        │ Membuat objek Mahasiswa(mhs1)              │
+        │ - panggil konstruktor Mahasiswa            │
+        │ - Mahasiswa memanggil Person.__init__      │
+        └───────────────────────┬────────────────────┘
+                                │
+                                ▼
+                ┌──────────────────────────┐
+                │ Set mhs1.umur = 19       │
+                │ (lewat setter umur)      │
+                └──────────────────────────┘
+                                │
+                                ▼
+                ┌──────────────────────────┐
+                │ Set mhs1.alamat = Bekasi │
+                └──────────────────────────┘
+                                │
+                                ▼
+                ┌──────────────────────────┐
+                │ mhs1.cetak_nama()        │
+                │ print "Nama Mahasiswa"   │
+                └──────────────────────────┘
+                                │
+                                ▼
+                ┌──────────────────────────┐
+                │ mhs1.cetak_data()        │
+                │ print NIM, Nama, Alamat, │
+                │ dan Umur (via property)  │
+                └──────────────────────────┘
+                                │
+                                ▼
+                ┌──────────────────────────┐
+                │        Program End       │
+                └──────────────────────────┘
 ```
 
-                  +---> CALL mhs1.cetak_data()
-                            -> prints NIM, Nama, Alamat, Umur
-                  |
-                  `---> RETURN from demo()
-        |
-`---> END
+Penjelasan Flowchart Singkat
+
+Program masuk ke demo().
+
+Membuat objek Mahasiswa, yang otomatis memanggil konstruktor Person.
+
+Mengisi atribut:
+
+umur (pakai setter → validasi umur)
+
+alamat
+
+Memanggil:
+
+cetak_nama()
+
+cetak_data() (override dari Person)
+
+Program selesai.
 
 
 **Penjelasan singkat:**
