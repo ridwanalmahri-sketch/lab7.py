@@ -141,6 +141,7 @@ Flowchart Program
 ```
 
 Penjelasan Flowchart Singkat
+
 Program masuk ke ```demo()```.
 Membuat objek Mahasiswa, yang otomatis memanggil konstruktor Person.
 Mengisi atribut:
