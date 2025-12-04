@@ -4,12 +4,13 @@ Program ini adalah implementasi sederhana dari sistem manajemen data mahasiswa m
 Langkah-Langkah Pembuatan Program
 1. Membuat Class Mahasiswa
 pythonclass Mahasiswa:
+```
     def __init__(self, nim, nama):
         self.nim = nim
         self.nama = nama
         self.umur = 0
         self.alamat = ""
-
+```
 Class Mahasiswa adalah blueprint untuk membuat objek mahasiswa
 Method __init__ adalah constructor yang dipanggil saat objek dibuat
 Parameter nim dan nama wajib diisi saat membuat objek
@@ -23,22 +24,24 @@ Method ini mencetak nama mahasiswa
 Menggunakan self untuk mengakses atribut nama dari objek
 
 3. Membuat Method cetak_data()
+```
 pythondef cetak_data(self):
     print(f"NIM: {self.nim}")
     print(f"Nama: {self.nama}")
     print(f"Alamat: {self.alamat}")
     print(f"Umur: {self.umur}")
-
+```
 Method ini mencetak semua data mahasiswa secara lengkap
 Menampilkan NIM, Nama, Alamat, dan Umur
 
 4. Membuat Instance/Object dalam Function demo()
 pythondef demo():
     # membuat instance Mahasiswa sesuai contoh slide
+```
     mhs1 = Mahasiswa('31251@157', 'M.Ridwan Almahri')
     mhs1.umur = 19
     mhs1.alamat = "Bekasi"
-
+```
 Membuat objek mhs1 dari class Mahasiswa
 Mengisi NIM dan nama saat pembuatan objek
 Mengubah nilai atribut umur dan alamat setelah objek dibuat
@@ -62,11 +65,13 @@ pythonif __name__ == '__main__':
 
 ## Output Program
 ```
+```
 Nama Mahasiswa: M.Ridwan Almahri
 NIM: 31251@157
 Nama: M.Ridwan Almahri
 Alamat: Bekasi
 Umur: 19
+```
 Konsep OOP yang Digunakan
 
 Encapsulation: Data dan method digabungkan dalam satu class
